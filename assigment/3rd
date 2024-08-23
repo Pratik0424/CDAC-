@@ -1,1 +1,65 @@
 
+public class pyramid {
+    public static void main(String[] args) {
+    
+    int n = 5;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = n; j <= i; j--) {
+            System.out.print("*");
+            if (j < i) {
+                System.out.print("");
+            }
+        }
+        System.out.println();
+    }
+    
+    }
+}
+
+public class halfPyramid {
+    public static void main(String args[]) {
+
+        int n = 8;
+        System.out.println("Enter a number");
+        
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0 && i > 2) {
+                continue;
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+
+public class halfNum {
+    public static void main(String args[]) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+                if (j < i) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+
+        for (int i = n; i >= 2; i--) { 
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+                if (j < i) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
