@@ -1,1 +1,45 @@
+public class positivenumber {
+     public static void main(String[] args) {
+      int num = 5;
+     if (num > 0) {
+         System.out.println("Num is Positive"); 
+      }  System.out.println("Num is not postive");
+  }
+}
+
+public class oddEven {
+     public static void main(String[] args) {
+      int num = 8;
+       if (num % 2 == 0) {
+         System.out.println("Num is even"); 
+        } else {  System.out.println("Num is odd");
+    }
+  }
+}
+
+public class negativeNumber {
+    public static void main(String[] args) {
+     int num = -9;
+      if (num < 0) {
+        System.out.println("num is negative"); 
+    } else {  System.out.println("num is not negative");
+  }
+}
+}
+
+public class largestOfThree {
+     public static void main(String[] args) {
+      int num1 = 8;
+      int num2 = 12;
+      int num3 = 15;    
+      if (num1 > num2){
+      System.out.println("num 1 is greatest");
+      } else {
+      System.out.println("num2 is greatest");
+}
+     if (num2 > num3) {
+      System.out.println("num 2 is greatest");
+}  else { 
+     System.out.println("num 3 is greatest");
+}
 
