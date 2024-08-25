@@ -41,5 +41,23 @@ public class largestOfThree {
       System.out.println("num 2 is greatest");
 }  else { 
      System.out.println("num 3 is greatest");
+} } }
+
+public class goodMorning {
+     public static void main(String[] args) {
+      int time = 6;
+      if (time > 5 && time < 12) {
+         System.out.println("Good Morning"); 
+          } else {  System.out.println("It is not morning");
+          }
+     }  
 }
 
+public class areaOfSquare {
+     public static void main(String[] args) {
+           int side1 = 4;
+           int side2 = 4; 
+           int area = side1 * side2;
+      System.out.println("Area of square is" + area);
+}
+     
