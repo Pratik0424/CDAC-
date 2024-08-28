@@ -1,1 +1,284 @@
+a) Navigate and List:
+cdac@LAPTOP-EUG8ANV8:~$ ls -l
+total 24
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:14 Day1
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:28 Day2
+drwxr-xr-x 3 cdac cdac 4096 Aug 28 22:50 LinuxAssignment
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 18:24 linuxAss
+-rw------- 1 cdac cdac    7 Aug 27 20:00 pratik.save
+-rw-rw-rw- 1 cdac cdac    0 Aug 27 20:14 pratik.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 18:23 pratik1
 
+
+b) File Management
+cdac@LAPTOP-EUG8ANV8:~$ cd LinuxAssignment
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano file1.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano File.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mkdir docs
+mkdir: cannot create directory ‘docs’: File exists
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mkdir Docs
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv Docs file.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 22:36 file1.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ chmod o+wx file1.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xrwx 2 cdac cdac 4096 Aug 28 22:36 file1.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv file1.txt file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xrwx 2 cdac cdac 4096 Aug 28 22:36 file2.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nana file2.txt
+Command 'nana' not found, did you mean:
+  command 'nano' from snap nano (7.2+pkg-4057)
+  command 'nano' from deb nano (6.2-1)
+  command 'nant' from deb nant (0.92~rc1+dfsg-7)
+  command 'nama' from deb nama (1.216-1)
+See 'snap info <snapname>' for additional versions.
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv file2.txt File2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano File2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ cd ..
+cdac@LAPTOP-EUG8ANV8:~$ rm file.txt
+rm: cannot remove 'file.txt': No such file or directory
+cdac@LAPTOP-EUG8ANV8:~$ rm file2.txt
+rm: cannot remove 'file2.txt': No such file or directory
+cdac@LAPTOP-EUG8ANV8:~$ ls
+Day1  Day2  LinuxAssignment  file1.txt  linuxAss  pratik.save  pratik.txt  pratik1
+cdac@LAPTOP-EUG8ANV8:~$ ls -l
+total 28
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:14 Day1
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:28 Day2
+drwxr-xr-x 4 cdac cdac 4096 Aug 28 23:14 LinuxAssignment
+-rw-r--r-- 1 cdac cdac   60 Aug 28 23:00 file1.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 18:24 linuxAss
+-rw------- 1 cdac cdac    7 Aug 27 20:00 pratik.save
+-rw-rw-rw- 1 cdac cdac    0 Aug 27 20:14 pratik.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 18:23 pratik1
+cdac@LAPTOP-EUG8ANV8:~$ rmdir pratik1
+cdac@LAPTOP-EUG8ANV8:~$ ls -l
+total 24
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:14 Day1
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:28 Day2
+drwxr-xr-x 4 cdac cdac 4096 Aug 28 23:14 LinuxAssignment
+-rw-r--r-- 1 cdac cdac   60 Aug 28 23:00 file1.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 18:24 linuxAss
+-rw------- 1 cdac cdac    7 Aug 27 20:00 pratik.save
+-rw-rw-rw- 1 cdac cdac    0 Aug 27 20:14 pratik.txt
+cdac@LAPTOP-EUG8ANV8:~$ rmdir linuxAss
+cdac@LAPTOP-EUG8ANV8:~$ rm file1.txt
+cdac@LAPTOP-EUG8ANV8:~$ ls -l
+total 16
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:14 Day1
+drwxr-xr-x 2 cdac cdac 4096 Aug 27 20:28 Day2
+drwxr-xr-x 4 cdac cdac 4096 Aug 28 23:14 LinuxAssignment
+-rw------- 1 cdac cdac    7 Aug 27 20:00 pratik.save
+-rw-rw-rw- 1 cdac cdac    0 Aug 27 20:14 pratik.txt
+cdac@LAPTOP-EUG8ANV8:~$ cd LinuxAssignment
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano file1.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ cat file1.txt
+hii
+hello
+whp
+how
+then
+when
+what
+why
+not
+atall
+
+
+c) Directory Management
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mkdir Docs
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv Docs file.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 22:36 file1.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ chmod o+wx file1.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xrwx 2 cdac cdac 4096 Aug 28 22:36 file1.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+
+d) Copy and Move Files:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv file1.txt file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 20
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+-rw-r--r-- 1 cdac cdac   62 Aug 28 21:52 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+drwxr-xrwx 2 cdac cdac 4096 Aug 28 22:36 file2.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+
+e) Permissions and Ownership:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ chmod 744 docs/file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ chown $USER docs/file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls -l
+total 28
+-rw-r--r-- 1 cdac cdac   68 Aug 28 23:04 File.txt
+drwxr-xrwx 2 cdac cdac 4096 Aug 28 22:36 File2.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:53 docs
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:06 file.txt
+-rw-r--r-- 1 cdac cdac   55 Aug 28 23:45 file1.txt
+drwxr-xr-x 2 cdac cdac 4096 Aug 28 23:26 file2.txt
+-rw------- 1 cdac cdac   27 Aug 28 22:50 nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ cat file2.txt
+cat: file2.txt: Is a directory
+
+f) Final Checklist:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls
+File.txt  File2.txt  docs  file.txt  file1.txt  file2.txt  nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls /
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+
+g) File Searching:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ find . -type f -name "*.txt"
+./docs/file2.txt
+./file2.txt/file1.txt
+./file1.txt
+./File.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ grep "file" file1.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls
+
+h) System Information:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ date
+Thu Aug 29 00:05:44 IST 2024
+
+i) Networking:
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ hostname -I
+172.29.218.57
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ping remote_server_address
+ping: remote_server_address: Temporary failure in name resolution
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=18.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=17.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=16.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=115 time=15.9 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=115 time=17.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=115 time=16.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=115 time=28.7 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=115 time=15.7 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=115 time=18.2 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=115 time=15.8 ms
+64 bytes from 8.8.8.8: icmp_seq=11 ttl=115 time=18.7 ms
+64 bytes from 8.8.8.8: icmp_seq=12 ttl=115 time=27.7 ms
+64 bytes from 8.8.8.8: icmp_seq=13 ttl=115 time=16.0 ms
+64 bytes from 8.8.8.8: icmp_seq=14 ttl=115 time=39.9 ms
+64 bytes from 8.8.8.8: icmp_seq=15 ttl=115 time=16.6 ms
+64 bytes from 8.8.8.8: icmp_seq=16 ttl=115 time=16.2 ms
+64 bytes from 8.8.8.8: icmp_seq=17 ttl=115 time=16.0 ms
+64 bytes from 8.8.8.8: icmp_seq=18 ttl=115 time=28.6 ms
+64 bytes from 8.8.8.8: icmp_seq=19 ttl=115 time=16.5 ms
+64 bytes from 8.8.8.8: icmp_seq=20 ttl=115 time=16.8 ms
+64 bytes from 8.8.8.8: icmp_seq=21 ttl=115 time=40.4 ms
+64 bytes from 8.8.8.8: icmp_seq=22 ttl=115 time=16.4 ms
+64 bytes from 8.8.8.8: icmp_seq=23 ttl=115 time=16.3 ms
+64 bytes from 8.8.8.8: icmp_seq=24 ttl=115 time=16.1 ms
+64 bytes from 8.8.8.8: icmp_seq=25 ttl=115 time=15.7 ms
+64 bytes from 8.8.8.8: icmp_seq=26 ttl=115 time=16.1 ms
+^C
+--- 8.8.8.8 ping statistics ---
+26 packets transmitted, 26 received, 0% packet loss, time 25045ms
+rtt min/avg/max/mdev = 15.721/19.742/40.434/7.030 ms
+
+j) File Compression:
+
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ zip -r docs.zip docs
+Command 'zip' not found, but can be installed with:
+sudo apt install zip
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sudo apt install zip
+[sudo] password for cdac:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 929 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.1 [174 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 zip amd64 3.0-12build2 [176 kB]
+Fetched 350 kB in 3s (123 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 24208 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-26ubuntu3.1_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.1) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-12build2_amd64.deb ...
+Unpacking zip (3.0-12build2) ...
+Setting up unzip (6.0-26ubuntu3.1) ...
+Setting up zip (3.0-12build2) ...
+Processing triggers for man-db (2.10.2-1) ...
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ zip -r docs.zip docs
+  adding: docs/ (stored 0%)
+  adding: docs/file2.txt (deflated 20%)
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ $ ls
+$: command not found
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls
+File.txt  File2.txt  docs  docs.zip  file.txt  file1.txt  file2.txt  nano.44470.save
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ unzip docs.zip -d new_dir
+Archive:  docs.zip
+   creating: new_dir/docs/
+  inflating: new_dir/docs/file2.txt
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ ls
+File.txt  File2.txt  docs  docs.zip  file.txt  file1.txt  file2.txt  nano.44470.save  new_dir
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ unzip new_dir
+unzip:  cannot find or open new_dir, new_dir.zip or new_dir.ZIP. // error
+
+k) File Editing:
+
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano file1.txt
+
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sed -i 's/my_name_pratik/g' file1.txt
+sed: -e expression #1, char 18: unterminated `s' command
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sed -i 's/yr/my_name_'g' file1.txt
+>
+> hh
+> how
+> ^C
+
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ cat file1.txt
+hey
+hii
+what happen
+ha
+haha
+hahahahahahh
+not funny
+yr
+
+cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sed 's/yr/london/g' file1.txt
+hey
+hii
+what happen
+ha
+haha
+hahahahahahh
+not funny
+london
