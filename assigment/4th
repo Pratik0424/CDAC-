@@ -258,10 +258,6 @@ cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ nano file1.txt
 cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sed -i 's/my_name_pratik/g' file1.txt
 sed: -e expression #1, char 18: unterminated `s' command
 cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ sed -i 's/yr/my_name_'g' file1.txt
->
-> hh
-> how
-> ^C
 
 cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ cat file1.txt
 hey
