@@ -687,7 +687,7 @@ Ans:
 
 classDays{
 publicstaticvoidmain(Stringargs[]){ int day = 4;
-switch(day){ case 1 :
+switch(day){ case 1:
 System.out.println("TodayisMonday"); break;
 case2:
 System.out.println("Today isTuesday"); break;
