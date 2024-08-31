@@ -18,7 +18,7 @@ public void main(String[] args) { System.out.println("Hello,World!");
 }
 }
 
-•	Whaterrordoyougetwhenrunningthiscode?
+•Whaterrordoyougetwhenrunningthiscode?
 -	error: // static are missing
 Solution of Snippet 1:
 publicclassMain{
