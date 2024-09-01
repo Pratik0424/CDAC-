@@ -24,8 +24,7 @@ public class negativeNumber {
         System.out.println("num is negative"); 
     } else {  System.out.println("num is not negative");
   }
-}
-}
+}}
 
 public class largestOfThree {
      public static void main(String[] args) {
