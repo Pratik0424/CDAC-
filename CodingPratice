@@ -39,7 +39,7 @@ public class ReversePyramid {
 
 
 public class AZPyramid {
-    public static void main(String[] args) {
+    public static void main(String[]  args) {
         int n = 5; // Number of rows
         char letter = 'A'; // Starting letter
 
