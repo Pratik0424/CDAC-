@@ -101,7 +101,6 @@ why
 not
 atall
 
-
 c) Directory Management
 cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mkdir Docs
 cdac@LAPTOP-EUG8ANV8:~/LinuxAssignment$ mv Docs file.txt
