@@ -68,3 +68,5 @@ public class areaOfRectangle {
       System.out.println("Area of rectangle is" + area);
           }  
 }
+
+
