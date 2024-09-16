@@ -13,7 +13,7 @@ public class Pyramid {
                     System.out.print("  "); // inside space
                 }
             }
-            System.out.println();
+        System.out.println();
         }
     }
 }
