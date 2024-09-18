@@ -10,7 +10,7 @@ public class Pyramid {
                 if (j == 1 || j == (2 * i - 1) || i == n) {
                     System.out.print("* "); // corner star
                 } else {
-                    System.out.print("  "); // inside space
+                    System.out.print("  "); // inside space of loop
                 }
             }
         System.out.println();
