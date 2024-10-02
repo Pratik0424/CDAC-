@@ -22,3 +22,49 @@ public class StarPrint {
 }
 
 
+/*2. Remove Array Duplicates
+Problem: Write a Java program to remove duplicates from a sorted array and return the new length of the array.
+
+Test Cases:
+Input: arr = [1, 1, 2]
+Output: 2
+Input: arr = [0, 0, 1, 1, 2, 2, 3, 3]
+Output: 4
+
+ time complexity : O(n)
+ space complexity : O(1)
+*/
+public class RmArrayDuplicate {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter element size : ");
+		int size = sc.nextInt();
+
+		int [] arr = new int[size];
+		
+		System.out.print("Enter element : ");
+		for(int i=0; i< size ; i++) {
+			arr[i] = sc.nextInt();
+		}
+		
+		int len = arr.length;
+		int j=0;
+		
+		for(int i=0 ; i< len -1; i++) {
+			if(arr[i] != arr[i+1]) {
+				arr[j++] = arr[i];
+			}
+		}
+		int count=0;
+		arr[j++] = arr[len - 1];
+		for(int k=0; k<j ; k++) {
+			System.out.print(arr[k] + " ");
+			count++;
+		}
+			System.out.println();
+			System.out.print("count : " + count);
+			sc.close();
+	}
+}
+
+
