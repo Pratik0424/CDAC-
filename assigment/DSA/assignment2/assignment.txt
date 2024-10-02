@@ -68,3 +68,31 @@ public class RmArrayDuplicate {
 }
 
 
+
+/*3. Remove White Spaces from String
+Problem: Write a Java program to remove all white spaces from a given string.
+
+Test Cases:
+Input: "Hello World"
+Output: "HelloWorld"
+Input: "  Java   Programming  "
+Output: "JavaProgramming"
+*/
+// time complexity : O(n^2)
+// space complexity : O(n)
+
+
+public class RmSpaces {
+	public static void main(String[] args) {
+		
+		System.out.print("Enter String : ");
+		Scanner sc = new Scanner(System.in);
+		String n = sc.nextLine();
+//		String n = " Hello World";
+		
+		n = n.replaceAll("\\s", "");
+		System.out.println(n);
+		sc.close();
+	}
+}
+
