@@ -96,3 +96,32 @@ public class RmSpaces {
 	}
 }
 
+/*4. Reverse a String
+Problem: Write a Java program to reverse a given string.
+
+Test Cases:
+Input: "hello"
+Output: "olleh"
+Input: "Java"
+Output: "avaJ"
+*/
+// time complexity : O(n^2)
+// space complexity : O(n)
+
+
+public class ReverseString {
+	public static void main(String[] args) {
+		
+		System.out.print("Enter String : ");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+//		String str = "hello";
+		String result = "";
+		
+		for(int i=str.length()-1; i>=0; i--) {
+			result += str.charAt(i);
+		}
+		System.out.println(result);
+		
+	}
+}
