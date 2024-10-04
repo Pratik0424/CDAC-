@@ -125,3 +125,57 @@ public class ReverseString {
 		
 	}
 }
+/*5. Reverse Array in Place
+Problem: Write a Java program to reverse an array in place.
+
+Test Cases:
+
+Input: arr = [1, 2, 3, 4]
+Output: [4, 3, 2, 1]
+Input: arr = [7, 8, 9]
+Output: [9, 8, 7]
+*/
+// time complexity : O(n^2)
+// space complexity : O(n)
+public class ReverseArray {
+    // Method to reverse an array in place
+    public static void reverse(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+        
+        while (start < end) {
+            // Swap the elements at start and end
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            
+            // Move the pointers
+            start++;
+            end--;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // Taking input for array size
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        
+        // Taking input for array elements
+        int[] arr = new int[size];
+        System.out.print("Enter the elements of the array: ");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        
+        // Reversing the array
+        reverse(arr);
+        
+        // Printing the reversed array
+        System.out.println("Reversed Array: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
