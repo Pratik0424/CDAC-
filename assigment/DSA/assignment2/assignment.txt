@@ -129,7 +129,6 @@ public class ReverseString {
 Problem: Write a Java program to reverse an array in place.
 
 Test Cases:
-
 Input: arr = [1, 2, 3, 4]
 Output: [4, 3, 2, 1]
 Input: arr = [7, 8, 9]
