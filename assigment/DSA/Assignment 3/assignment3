@@ -105,3 +105,40 @@ public class BracketParentheses {
 		return top == -1;
 	}
 }
+
+
+/*3. Reverse a string using a stack.
+•	Test Case 1:
+Input: "hello"
+Output: "olleh"
+•	Test Case 2:
+Input: "world"
+Output: "dlrow"
+ 	time complexity : O(1)
+ 	space complexity : O(1)
+*/
+public class Postfix {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter string : ");
+		String in = sc.nextLine();
+		
+		System.out.println("Reserved : "+ reverse(in));
+	}
+	public static String reverse(String str) {
+		char [] stack = new char[str.length()];
+		int top = -1;
+		
+		for(char c : str.toCharArray()) {
+			stack[++top] = c;
+		}
+		StringBuilder reversed = new StringBuilder();
+		
+		while(top >= 0) {
+			reversed.append(stack[top--]);
+		}
+		return reversed.toString();
+	}
+}
+
