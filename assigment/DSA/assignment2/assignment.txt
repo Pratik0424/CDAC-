@@ -1,10 +1,11 @@
 1. Printing Patterns
 Problem: Write a Java program to print patterns such as a right triangle of stars.
-Input: n = 3
+Input: n = 4
 Output:
 *
 **
 ***
+****
 
 public class StarPrint {
 	public static void main(String[] args) {
