@@ -241,7 +241,7 @@ class LinkedList{
 		}
 	}
 }
-
+// tm = O(nlogn);
 class MergeTwo{
 	public static void main(String[] args){
 		LinkedList.Node head1 = new LinkedList.Node(1);
