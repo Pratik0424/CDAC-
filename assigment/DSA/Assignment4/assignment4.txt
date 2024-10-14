@@ -9,6 +9,7 @@ class LinkedList{
 			next = null;
 		}
 	}
+
 	void insert(int value){
 		Node newNode = new Node(value);
 		if(head == null){
