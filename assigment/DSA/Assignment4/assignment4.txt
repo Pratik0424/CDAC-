@@ -70,7 +70,6 @@ class LinkedList{
 }
 
 
-
 class Reverse{
 	Node head;
 	static class Node{
