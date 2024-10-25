@@ -1,4 +1,4 @@
-ASSIGNMENT 1
+--ASSIGNMENT 1
 
 A) SALESPEOPLE
 Snum int(4)
@@ -61,10 +61,10 @@ mysql> INSERT INTO ORDERS (Onum, Amt, Odate, Cnum, Snum) VALUES
 
 ASSIGNMENT 2;
 
-1) Which field of the Customers table is the primary key?
-The primary key of the Customers table is the CNUM field. It's unique for each customer.
+--1) Which field of the Customers table is the primary key?
+--The primary key of the Customers table is the CNUM field. It's unique for each customer.
 
-Q.2 mysql> select Rating from customers;
+--Q.2 mysql> select Rating from customers;
 +--------+
 | Rating |
 +--------+
@@ -96,7 +96,7 @@ DML (Data Manipulation Language) -> INSERT
 
 ASSIGNMENT 4;
 
-1) Write a select command that produces the order number, amount, and date for all rows in the Orders table.
+--1) Write a select command that produces the order number, amount, and date for all rows in the Orders table.
 
 mysql> select `Onum`,`Amt`, `Odate`
     -> from orders;
