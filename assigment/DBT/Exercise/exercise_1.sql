@@ -1,5 +1,5 @@
-Exercise 1
-Q1:
+--Exercise 1
+--Q1:
 mysql> CREATE TABLE SEMP(
     -> EMPNO CHAR(4),
     -> EMPNAME CHAR(20),
@@ -8,20 +8,20 @@ mysql> CREATE TABLE SEMP(
     -> DEPTHEAD CHAR(4));
 Query OK, 0 rows affected (0.15 sec)
 
-Q2:
+--Q2:
 mysql> CREATE TABLE SDEPT(
     -> DEPTNO CHAR(2),
     -> DEPTNAME CHAR(15));
 Query OK, 0 rows affected (0.05 sec)
 
-Q3:
+--Q3:
 mysql> INSERT INTO SDEPT(DEPTNO, DEPTNAME) VALUES
     -> ( 10, 'DEVELOPMENT'),
     -> ( 10, 'TRAINING');
 Query OK, 2 rows affected (0.02 sec)
 Records: 2  Duplicates: 0  Warnings: 0
 
-Q4:
+--Q4:
 mysql> select * from semp;
 +-------+---------+-------+--------+----------+
 | EMPNO | EMPNAME | BASIC | DEPTNO | DEPTHEAD |
@@ -98,7 +98,7 @@ mysql> INSERT INTO SPJ (`S#`, `P#`, `J#`, Qty) values
 Query OK, 3 rows affected (0.01 sec)
 
 
-Q5: Display all the data from the S table.
+--Q5: Display all the data from the S table.
 mysql> select * from s;
 +------+-----------+--------+----------+
 | S#   | Sname     | Status | City     |
@@ -110,7 +110,7 @@ mysql> select * from s;
 3 rows in set (0.00 sec)
 
 
-Q6: Display only the S# and SNAME fields from the S table.
+--Q6: Display only the S# and SNAME fields from the S table.
 mysql> select `S#`, Sname from s;
 +------+-----------+
 | S#   | Sname     |
@@ -122,7 +122,7 @@ mysql> select `S#`, Sname from s;
 3 rows in set (0.00 sec)
 
 
-Q7: Display the PNAME and COLOR from the P table for the CITY=”London”.
+--Q7: Display the PNAME and COLOR from the P table for the CITY=”London”.
 mysql> select `PNAME`, `COLOR` from p
     -> where city = "London";
 +-------+-------+
@@ -133,7 +133,7 @@ mysql> select `PNAME`, `COLOR` from p
 1 row in set (0.00 sec)
 
 
-Q8: Display all the Suppliers from London.
+--Q8: Display all the Suppliers from London.
 mysql> select * from s
     -> where City = "London";
 +------+-----------+--------+--------+
@@ -144,7 +144,7 @@ mysql> select * from s
 1 row in set (0.00 sec)
 
 
-Q9: Display all the Suppliers from Paris or Athens.
+--Q9: Display all the Suppliers from Paris or Athens.
 mysql> select * from s
     -> where City = "Paris" or City = "Athens";
 +------+-----------+--------+-------+
@@ -160,7 +160,7 @@ mysql> select * from j
     -> where City = 'Athens';
 Empty set (0.00 sec)
 
-Q11:Display all the Partnames with the weight between 12 and 14 (inclusive of both).
+--Q11:Display all the Partnames with the weight between 12 and 14 (inclusive of both).
 mysql> SELECT Pname FROM P 
 	-> where weight between 12 AND 14;
 +-------+
@@ -171,7 +171,7 @@ mysql> SELECT Pname FROM P
 1 row in set (0.00 sec)
 
 
-Q12:Display all the Suppliers with a Status greater than or equal to 20.
+--Q12:Display all the Suppliers with a Status greater than or equal to 20.
 mysql> select * from s
     -> where status >= 20;
 +------+-----------+--------+----------+
@@ -183,7 +183,7 @@ mysql> select * from s
 2 rows in set (0.00 sec)
 
 
-Q13: Display all the Suppliers except the Suppliers from London.
+--Q13: Display all the Suppliers except the Suppliers from London.
 mysql> select * from s
     -> where City != 'London';
 +------+-----------+--------+----------+
@@ -195,7 +195,7 @@ mysql> select * from s
 2 rows in set (0.00 sec)
 
 
-Q14: Display only the Cities from where the Suppliers come from.
+--Q14: Display only the Cities from where the Suppliers come from.
 mysql> select DISTINCT City from s;
 +----------+
 | City     |
@@ -207,7 +207,7 @@ mysql> select DISTINCT City from s;
 3 rows in set (0.01 sec)
 
 
-Q15: Assuming that the Part Weight is in GRAMS, display the same in MILLIGRAMS and KILOGRAMS.
+--Q15: Assuming that the Part Weight is in GRAMS, display the same in MILLIGRAMS and KILOGRAMS.
 mysql> select Pname,
     -> weight * 1000 as Weight_Milligrams,
     -> weight / 1000 as Weight_Kiograms
