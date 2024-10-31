@@ -1,0 +1,96 @@
+
+Bajaj Fiserve 6.5LPA 
+My Interview Questions-
+ Core Java-
+What are OOPS concepts in java explain with real world example
+How did you apply OOPS concept in your project. Explain with example.
+What is multithreading in java
+Why we use interface in java
+Diff between interface and abstract class
+Explain thread life cycle
+Why java is not pure Object-oriented programming language
+What is static keyword in java
+Explain final keyword
+What is serialization. Why we need it?
+Why we use collection. Diff bet arraylist and linkedlist
+Where we use set and where we use list?
+Explain collections class.
+Diff between Hashmap and hashtable.
+Data Structures-
+Data structures and its types.
+Stack and queue.
+Sorting algorithms and its complexity.
+﻿
+﻿
+Advanced Java-
+Why we use spring framework?
+Why springboot when we have spring?
+What is hibernate?
+Why we use AOP?
+What is Dependency injection? Why we use it?
+What are different design patterns?
+What is microservices and how did you use in your project?
+What is JWT?
+What is authorization and authentication?
+What is coupling and cohesion in springboot?
+What is diff between REST and SOAP?
+SOA in springboot?
+﻿
+React Js-
+
+
+
+1.introduction , explain project 
+  2.why we do programming
+  3.what is oops
+  4.all pillers of oops with example , how we achive all pillers in java  
+  5.error vs exception
+  6.what is exception handling
+  7.which java version you used , latest version of java
+  8.java 8 feature
+  9.checked vs unchecked
+  10. parent class of exception
+  11.try catch code and asking about output
+  12.stackoverflow , classnotfound
+  13.@springbootapplication ? , @RequestMapping
+  14.server inside springboot , type of server's
+  15.internal woking of hashset
+  16.types of joins and explain it
+  17.delete vs drop vs truncate
+   
+  3  codes
+  
+  1.Two Sum - Given an array of integers nums and an integer target, return the two numbers such that they add up to target.
+       Input: nums = [3,2,4], target = 6 Output: [2,4]
+  
+  2. Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+        Input: nums = [3,0,1]
+        Output: 2
+  
+  3.Given a string s, find the length of  the longest substring without repeating characters
+       Input: s = "abcabcbb" Output: 3
+    
+    
+    
+    HR round (around 45 min)
+    
+    1.Introduction , why you choose IT
+    2. explain project
+    3.project structure (group mem,how you create group ,who is leader)
+    4.technologies for project
+    5.tool used for project
+    6.are you acting as leader
+    7.which difficulty faced during project
+    8. how you solve it
+    9.why you choose springboot(adv over spring)
+    10.serialization ,Derialization
+    11.What is Dependency Injection
+    12.what accual mean of @Autowierd annotation
+    13.What is Design Pattern
+    14.Singalton ,FactoryDesign
+    15. try finally code and ask for ans
+    
+    2 code
+    
+    1.swapping 2 nob without using 3rd var
+    2.swapping 3 nob without using 4rt var
