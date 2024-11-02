@@ -13,8 +13,6 @@ public class Pyramid {
                     System.out.print("  "); // inside space of loop
                 }
             }
-
-
         System.out.println();
 
         }
